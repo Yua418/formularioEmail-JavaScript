@@ -11,8 +11,15 @@ Para evitar errores, se utiliza un `.addEventListener("DOMContentLoaded")` que v
 3. **const inputMensaje**: Toma la etiqueta textarea con id "mensaje" que se encuentra en la linea 27.
 4. **const error**: Crea una etiqueta parrafo para ser utlizado en una alerta.
 5. **const formulario**: Toma la etiqueta formulario con id "formulario" que se encuentra en la linea 14.
+6. **const alerta**: Verifica si un mensaje de alerta ya esta creado, fijandose en si en la referencia de cada input en particular hay una clase unica que le pertenece a los mensajes de alerta.
+7. **const regex**: Contiene una *expresion regular* para verificar un email.
+8. **const resultado**: Utiliza la expresion `regex` sobre el email.
+9. **const email**: Este es un objeto que guarda todos los campos del email escrito.
+10. **const btnSubmit**: Toma la etiqueta button de tipo submit que se encuentra en la linea 31.
 
 ## Funciones y ejecucion 
 1. **validar()**: Esta funcion toma los datos agregados en las variables `inputEmail`, `inputAsunto` y `inputMensaje` para revisar que tengan informacion.
 2. **mostrarAlerta()**: Genera una alerta si uno de los campos del formulario esta vacio.
-3. 
+3. **limpiarAlerta()**: Elimina una alerta cuando uno de los campos del furmulario se encuentre con datos.
+4. **validarEmail()**: Esta funcion contiene una *expresión regular* que busca un patron en una cadena de texto (email en este caso) para verificar que cumpla con el patron requerido.
+5. **comprobarEmail**: Comprueba que los campos sean correctos (retornando true si hay algo mal) y habilita la variable `btnSubmit` en consecuencia.
