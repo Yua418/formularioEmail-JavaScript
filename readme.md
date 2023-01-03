@@ -16,6 +16,9 @@ Para evitar errores, se utiliza un `.addEventListener("DOMContentLoaded")` que v
 8. **const resultado**: Utiliza la expresion `regex` sobre el email.
 9. **const email**: Este es un objeto que guarda todos los campos del email escrito.
 10. **const btnSubmit**: Toma la etiqueta button de tipo submit que se encuentra en la linea 31.
+11. **const btnReset**: Toma la etiqueta button de tipo reset que se encuentra en la linea 42.
+12. **const spinner**: Toma la etiqueta div con la id spinner que se encuentra en la linea 54.
+13. **const AlertaSucces**: Crea una alerta que informa que la tarea se cumplio con exito.
 
 ## Funciones y ejecucion 
 1. **validar()**: Esta funcion toma los datos agregados en las variables `inputEmail`, `inputAsunto` y `inputMensaje` para revisar que tengan informacion.
@@ -23,3 +26,5 @@ Para evitar errores, se utiliza un `.addEventListener("DOMContentLoaded")` que v
 3. **limpiarAlerta()**: Elimina una alerta cuando uno de los campos del furmulario se encuentre con datos.
 4. **validarEmail()**: Esta funcion contiene una *expresión regular* que busca un patron en una cadena de texto (email en este caso) para verificar que cumpla con el patron requerido.
 5. **comprobarEmail**: Comprueba que los campos sean correctos (retornando true si hay algo mal) y habilita la variable `btnSubmit` en consecuencia.
+6. **enviarEmail**: simula el envio de un email poniendo una pantalla de carga ficticia.
+7. **resetFormulario**: Resetea el formulario, borrando todos los datos.
