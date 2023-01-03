@@ -13,16 +13,22 @@ document.addEventListener("DOMContentLoaded", function() {
     
     function validar(event) {
         if (event.target.value.trim() === "") {
-            mostrarAlerta(event.target.name);
+            mostrarAlerta(event.target.name, event.target.parentElement);
         } else {
             console.log("Hay datos wey", event.target.value);
         };
     };
 
-    function mostrarAlerta(alerta) {
+    function mostrarAlerta(mensaje, referencia) {
+        // Comprueva si ya existe una alerta
+        const alerta = document.querySelector(".bg-red-600");
+
+        // Generar alerta HTML
         const error = document.createElement("P");
-        error.textContent = `El campo de ${alerta} esta vacio`;
+        error.textContent = `El campo de ${mensaje} esta vacio`;
         error.classList.add("bg-red-600", "text-white", "p-2", "text-center");
-        formulario.appendChild(error);
+
+        // Introduce la alerta al HTML
+        referencia.appendChild(error);
     };
 });
