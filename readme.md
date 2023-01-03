@@ -1,8 +1,7 @@
 # Simulador de formularios de email - JavaScript
-``
 Este es un pequeño proyecto para practicar sobre los formularios en JavaScript, el HTML y CSS son una plantilla web, el archivo *app.js* es el importante en este caso.
 
-Para evitar errores, se utiliza un `.addEventListener("DOMContentLoaded")` que verificara que toda la pagia ya este cargada.
+Para evitar errores, se utiliza un `.addEventListener("DOMContentLoaded")` que verificara que toda la pagina ya este cargada.
 
 
 ## Variables y funcion 
